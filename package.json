@@ -1,0 +1,22 @@
+{
+  "name": "javascript_summary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WuT416/JavaScript_summary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WuT416/JavaScript_summary/issues"
+  },
+  "homepage": "https://github.com/WuT416/JavaScript_summary#readme"
+}
