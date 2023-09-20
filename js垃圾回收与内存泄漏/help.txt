@@ -1,4 +1,5 @@
 node --expose-gc closure-right
 node --expose-gc closure-wrong
 node --expose-gc closure-circle-right
+node --expose-gc closure-circle-right2
 node --expose-gc closure-circle-wrong
