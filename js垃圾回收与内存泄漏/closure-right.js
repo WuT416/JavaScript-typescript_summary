@@ -1,8 +1,8 @@
 const heapdump = require('heapdump');
 
 var path = require("path");
-var startMemory = path.join(__dirname, "/file/start2.heapsnapshot")
-var endMemory = path.join(__dirname, "/file/end2.heapsnapshot")
+var startMemory = path.join(__dirname, "/file/start-right.heapsnapshot")
+var endMemory = path.join(__dirname, "/file/end-right.heapsnapshot")
 
 heapdump.writeSnapshot(startMemory); // 记录应用开始时的内存dump
 
