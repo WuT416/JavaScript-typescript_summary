@@ -9,7 +9,7 @@ heapdump.writeSnapshot(startMemory); // 记录应用开始时的内存dump
 
 var replaceThing = function () {
     //为了方便观察内存情况（正常情况下一般是不会有这么长的数组的），new一个有一亿项元素的数组，这样数组本身会占用很大的内存
-    var originalThing = new Array(100000000).join('*');
+    var originalThing = new Array(100000).join("this_is_a_big_data");
     var outer = 'outer str';
     console.log('new...');
     return function () {
@@ -21,6 +21,6 @@ var replaceThing = function () {
 var closureFn = replaceThing();
 //执行
 closureFn();
-
+global.gc();
 heapdump.writeSnapshot(endMemory); // 记录应用结束时的内存dump
 console.log('结束-wrong')

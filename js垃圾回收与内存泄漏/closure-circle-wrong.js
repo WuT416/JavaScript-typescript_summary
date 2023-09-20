@@ -23,6 +23,7 @@ function outer() {
 for(let i = 0; i < 1000; i++) {
     outer();
 }
+global.gc();
 heapdump.writeSnapshot(endMemory); // 记录应用结束时的内存dump
 
 console.log('结束-wrong')
