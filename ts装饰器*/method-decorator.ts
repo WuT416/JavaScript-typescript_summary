@@ -19,11 +19,9 @@ function enumerable(value: boolean) {
     propertyKey: string,
     descriptor: PropertyDescriptor
   ) {
-    console.log(propertyKey, descriptor);
+    console.log(target, propertyKey, descriptor);
     descriptor.writable = false;
   };
 }
 
-console.log(Object.getOwnPropertyDescriptor(MGreeter, 'greet'))
-
-
+console.log(Object.getOwnPropertyDescriptor(MGreeter, "greet"));
