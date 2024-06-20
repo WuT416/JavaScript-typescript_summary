@@ -7,6 +7,7 @@ class MGreeter {
   constructor(message: string) {
     this.greeting = message;
   }
+  // @ts-ignore
   @enumerable(true)
   static greet() {
     return "Hello,";
@@ -21,7 +22,10 @@ function enumerable(value: boolean) {
   ) {
     console.log(target, propertyKey, descriptor);
     descriptor.writable = false;
+    return ()=>{};
   };
 }
 
 console.log(Object.getOwnPropertyDescriptor(MGreeter, "greet"));
+
+console.log(MGreeter.greet)
